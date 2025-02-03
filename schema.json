@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "identificador único de la reserva"
+      },
+      "hotel": {
+        "type": "string",
+        "description": "nombre del hotel"
+      },
+      "fecha_inicio": {
+        "type": "string",
+        "format": "date",
+        "description": "fecha de inicio de la reserva"
+      },
+      "fecha_fin": {
+        "type": "string",
+        "format": "date",
+        "description": "fecha de fin de la reserva"
+      },
+      "tipo_habitacion": {
+        "type": "string",
+        "description": "tipo de habitación"
+      },
+      "estado": {
+        "type": "string",
+        "description": "estado de la reserva"
+      },
+      "num_huespedes": {
+        "type": "integer",
+        "description": "número de huéspedes de la reserva"
+      }
+    },
+    "required": [
+      "id",
+      "hotel",
+      "fecha_inicio",
+      "fecha_fin",
+      "tipo_habitacion",
+      "estado",
+      "num_huespedes"
+    ],
+    "example": {
+      "id": 1,
+      "hotel": "Barcelo Punta Cana",
+      "fecha_inicio": "2025-01-25",
+      "fecha_fin": "2025-01-29",
+      "tipo_habitacion": "Doble",
+      "estado": "Confirmada",
+      "num_huespedes": 2
+    }
+}
